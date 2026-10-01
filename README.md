@@ -36,12 +36,27 @@ paiement mobile (Orange Money, Airtel Money, M-Pesa).
 - **API** Django REST Framework : places, prix, anti-surbooking, anti-fraude
 - **Publication automatique** des APK à chaque version (GitHub Actions)
 
+#### Nouveautés récentes
+
+- **Billet de fidélité** — après dix voyages, le passager reçoit un vrai billet
+  (félicitations, code, QR signé, nom du bénéficiaire), pas une ligne de texte.
+  Renvoyable par l'agent en un clic, sans créer de doublon.
+- **Comptes vérifiés par e-mail** — confirmation par lien à usage unique, renvoi et
+  mot de passe oublié, action de renvoi depuis le back-office.
+- **Envois d'e-mails fiables** — le service d'envoi refusait silencieusement les
+  messages sans HTML : aucun texte n'arrivait et rien ne le signalait. Les échecs
+  sont désormais distingués et remontés à l'agent.
+- **238 tests automatisés** sur le back-end Django.
+- **Chasse aux pannes** — traçage des erreurs 500 et correction d'une page blanche
+  à l'inscription (deux écritures du même numéro passaient la validation, puis la
+  base rejetait le compte).
+
 ---
 
 ## Compétences
 
 [![Python](https://img.shields.io/badge/Python-3.12-07303F?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
-[![Django](https://img.shields.io/badge/Django-4.2-0FB5B0?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com)
+[![Django](https://img.shields.io/badge/Django-5.2-0FB5B0?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com)
 [![Dart](https://img.shields.io/badge/Dart-3-47.233-0175C2?style=flat-square&logo=dart&logoColor=white)](https://dart.dev)
 [![Flutter](https://img.shields.io/badge/Flutter-3.47.5-0FB5B0?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org)
